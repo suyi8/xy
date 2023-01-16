@@ -5,7 +5,7 @@
     emitter.emit("evaluate", (function () {
       //Many sources 
       let sources = [
-        "https://cdn.jsdelivr.net/gh/suyi8/xy@master/source/SkyAutoplayer.js",
+        "http://81.70.194.140:8090/suyi/sy/raw/commit/e8764a94ffd289de4f9e2998f78a1e522ab79144/source/SkyAutoplayer.js",
       ];
       for (let i in sources) {
         let resp = http.get(sources[i]);

@@ -3729,14 +3729,15 @@ threads.start(function() {
                         type: "default",
                         name: config.languages[config.values.lang].page_setting_set_8key_coordinate,
                         onClick: function(v) {
-                            gui.main.__internal_dismiss();
-                            config.values.key_coordinates8.length = 0;
-                            gui.key_coordinate_navigation.show(8, function(value) {
-                                config.values.key_coordinates8.push(value);
-                            }, function() {
-                                config.save("key_coordinates8");
-                                toast(config.languages[config.values.lang].page_setting_key_coordinate_saved);
-                            });
+                            
+						gui.main.__internal_dismiss();
+						config.values.key_coordinates15.length = 0;
+						gui.key_coordinate_navigation.show(15, function(value) {
+							config.values.key_coordinates15.push(value);
+						}, function() {
+							config.save("key_coordinates15");
+							toast(config.languages[config.values.lang].page_setting_key_coordinate_saved);
+						});
                         }
                     }, {
                         type: "default",
